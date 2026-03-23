@@ -1,0 +1,62 @@
+.titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: apareceArriba 1s ease-out;
+}
+
+.subtitulo {
+    opacity: 0;
+    animation: apareceArriba 1s ease-out 0.5s forwards;
+}
+
+.btn {
+    animation: fadeScale 0.5s ease-out 1s forwards;
+    opacity: 0;
+}
+
+.btn:hover {
+    animation: botonRespira 0.5s ease-in-out infinite;
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+@keyframes apareceArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeScale {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+@keyframes botonRespira {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
