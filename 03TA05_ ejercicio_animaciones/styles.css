@@ -7,15 +7,16 @@
 .subtitulo {
     opacity: 0;
     animation: apareceArriba 1s ease-out 0.5s forwards;
+    
 }
 
 .btn {
     animation: fadeScale 0.5s ease-out 1s forwards;
     opacity: 0;
+    animation: botonRespira 0.5s ease-in-out 2 infinite;
 }
 
 .btn:hover {
-    animation: botonRespira 0.5s ease-in-out infinite;
     background-color: #0056b3;
     cursor: pointer;
 }
